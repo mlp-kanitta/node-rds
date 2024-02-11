@@ -15,6 +15,7 @@ app.post('/users', (req, res) => {
             ${req.query.username}', '${req.query.email}', '${req.query.age}')`, 
             function(err, result, fields) {
                 if (err) res.send(err);
+                
                 if (result) res.send({username: req.query.username, email: req.query.email, age: req.query.age});
                 if (fields) console.log(fields);
             });
