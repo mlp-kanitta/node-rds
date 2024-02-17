@@ -4,7 +4,8 @@
   "description": "node-rds",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && node index.js"
+    "build" : "npm install",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
